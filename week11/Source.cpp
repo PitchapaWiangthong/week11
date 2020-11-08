@@ -9,10 +9,8 @@ int main()
 	char str[4] = "abc";
 	int n = strlen(str);
 	scanf_s("%s", str, 4);
-	for (int i = 0; i < n; i++);
-	{
-		permutation(str, 0, n - 1); 
-	}
+	permutation(str, 0, n - 1); 
+
 	return 0;
 }
 
@@ -29,7 +27,6 @@ void permutation(char* a, int b, int c)
 	if (b == c)
 	{
 		printf("%s", a);	
-
 	}
 	else
 	{
@@ -41,5 +38,5 @@ void permutation(char* a, int b, int c)
 		}
 	}
 
-		printf("\n");
+		printf("\n");	
 }
